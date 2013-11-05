@@ -358,12 +358,9 @@ function linkify( selector ) {
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-								       multiplex: {
-
-					id: '55a6a9856070f0ff',
-					secret: 'null',
-					url: '192.168.1.107:1948'
-									},
+				id: '55a6a9856070f0ff',
+				secret: '13836278890069594870',
+				url: 'localhost:1948',
 				controls: true,
 				progress: true,
 				history: true,
@@ -380,8 +377,8 @@ function linkify( selector ) {
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
 					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: '//cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
-					{ src: 'plugin/multiplex/client.js', async: true }
+					{ src: '//cdjs.cloudflare.com/ajax/libs/socket.io/0.9.10/socket.io.min.js', async: true },
+					{ src: 'plugin/multiplex/master.js', async: true }
 				]
 			});
 
